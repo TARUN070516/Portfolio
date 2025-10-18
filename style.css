@@ -1,6 +1,4 @@
-
-  
-    :root{--accent:#0b74de;--bg:#0f1720;--card:#0b1220;--muted:#9aa6b2}
+:root{--accent:#0b74de;--bg:#0f1720;--card:#0b1220;--muted:#9aa6b2}
     *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#071025 0%,#071827 100%);color:#e6eef6;line-height:1.5}
     .wrap{max-width:960px;margin:36px auto;padding:28px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:12px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
     header{display:flex;align-items:center;justify-content:space-between;gap:16px}
@@ -35,3 +33,33 @@
     button{padding:10px 12px;border-radius:8px;border:0;background:var(--accent);color:#fff;font-weight:700}
     footer{text-align:center;color:var(--muted);font-size:.9rem;margin-top:12px}
     @media (max-width:560px){.hero{flex-direction:column}}
+    .avatar{
+      width:120px;
+      height:120px;
+      object-fit:cover;
+      border-radius:12px;
+      display:inline-block;
+      border:0;
+    }
+    .backdrop{
+      position:fixed;
+      inset:0;               /* top:0; right:0; bottom:0; left:0; */
+      width:100vw;
+      height:100vh;
+      z-index:-1;
+      overflow:hidden;
+      background-image: url("Background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: blur(8px) saturate(1.05);
+      opacity: 0.55;
+      pointer-events: none;
+      will-change: transform;
+    }
+    .backdrop::after{
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(2,6,23,0.35);
+    }

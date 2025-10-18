@@ -1,17 +1,18 @@
-<!-- ...existing code... -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio — Your Name</title>
+  <title>Tarun's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
+    <div class="backdrop" aria-hidden="true"></div>
   <main class="wrap" role="main">
     <header>
       <div class="brand">
-        <h1>Your Name</h1>
+        <h1>Tarun Nelli</h1>
         <p class="muted">Frontend Developer • Designer • Problem solver</p>
       </div>
       <nav aria-label="Main">
@@ -24,16 +25,18 @@
 
     <div class="hero">
       <div class="intro">
-        <h2>Hello — I'm Your Name</h2>
-        <p class="muted">I build clean, accessible web interfaces and small apps. Currently exploring TypeScript, accessibility patterns and performant UI.</p>
+        <h2>Hello — I'm Tarun Nelli</h2>
+        <p class="muted">I build clean, accessible web interfaces. Currently exploring ML.</p>
         <p style="margin-top:12px">
           <a class="cta" href="#projects">View projects</a>
           <a class="cta" style="background:transparent;color:var(--accent);margin-left:8px;border:1px solid rgba(255,255,255,0.06)" href="#contact">Get in touch</a>
         </p>
       </div>
       <div style="min-width:160px;text-align:center">
-        <div style="width:120px;height:120px;border-radius:12px;background:linear-gradient(135deg,#07263f,#083b5f);display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:1.1rem;color:#fff">Y N</div>
-        <p class="muted" style="margin-top:8px">Location • Available for freelance</p>
+        <a href="GOKU.jpg" target="_blank" rel="noopener">
+          <img src="GOKU.jpg" alt="Goku avatar" class="avatar" />
+        </a>
+        <p class="muted" style="margin-top:8px">HYDERABAD|INDIA • Available for freelance</p>
       </div>
     </div>
 
@@ -41,14 +44,9 @@
       <h2 id="edu-title" class="section-title">Education</h2>
       <div class="grid">
         <div class="edu-item">
-          <strong>B.Sc. in Computer Science</strong>
-          <div class="muted">University Name — 2020</div>
+          <strong>Persuing batchleors in CSE</strong>
+          <div class="muted">GITAM University — 2023-2027</div>
           <p class="muted" style="margin-top:8px">Focus on algorithms, web development and human-computer interaction.</p>
-        </div>
-        <div class="edu-item">
-          <strong>Online Courses</strong>
-          <div class="muted">React & Advanced CSS</div>
-          <p class="muted" style="margin-top:8px">Continuous learning via online platforms and side projects.</p>
         </div>
       </div>
     </section>
@@ -77,7 +75,6 @@
             <span class="chip">Git</span>
             <span class="chip">SQL</span>
             <span class="chip">Figma</span>
-            <span class="chip">Accessibility</span>
           </div>
           <p class="muted" style="margin-top:10px">Comfortable with responsive design, component-driven workflows and collaborative Git-based development.</p>
         </div>
@@ -90,7 +87,7 @@
         <article class="card">
           <h3>Project One</h3>
           <p class="muted">A short description of the project. Tech: React, TypeScript.</p>
-          <a href="#" target="_blank" rel="noopener">View on GitHub →</a>
+          <a href="https://github.com/TARUN070516" target="_blank" >View on GitHub →</a>
         </article>
         <article class="card">
           <h3>Project Two</h3>
@@ -117,23 +114,9 @@
     </section>
 
     <footer>
-      <div class="muted">© <span id="year"></span> Your Name — Built with simple HTML & CSS</div>
+      <div class="muted">© <span id="year"></span> | Tarun Nelli — Built with simple HTML & CSS</div>
     </footer>
   </main>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    function openMail(e){
-      e.preventDefault();
-      const name = encodeURIComponent(document.getElementById('name').value.trim());
-      const email = encodeURIComponent(document.getElementById('email').value.trim());
-      const message = encodeURIComponent(document.getElementById('message').value.trim());
-      const to = 'you@example.com'; // <-- replace with your email
-      const subject = encodeURIComponent('Portfolio contact from ' + name);
-      const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
-      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
-    }
-  </script>
 </body>
 </html>
-<!-- ...existing code... -->
